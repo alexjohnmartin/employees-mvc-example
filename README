@@ -1,0 +1,22 @@
+Contents
+*****************
+/sql - the SQL scripts and sqlite3.exe used to create the SQLite database
+/lib - all additional libraries used by the application
+EmployeesMvc.sln - the solution file for the application
+
+
+
+Installation 
+*****************
+The web app will run from wherever you extract it however the app requires the employees.db file is placed in a c:\sqlite with correct permissions for IIS to access it. 
+
+The database currently includes several job titles and 2 searchable users: Alex Martin and Joe Bloggs (1 added by the SQL scripts, 1 added by the UI).
+
+
+
+Obvious enhancements
+*************************
+The app is missing pagination on search results and log-in/authentication. I would also normally include some integration tests and have the ActiveRecord set up via the config. 
+
+Given more time, and if the rest of the team understands the concept, it would be good to refactor my "dirty" dependancy injection (default contructors) to use an injection framework instead, Castle Windsor or Spring.Net being obvious candidates. 
+
